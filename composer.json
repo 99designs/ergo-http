@@ -23,6 +23,5 @@
     },
     "autoload": {
         "psr-4": { "Ergo\\Http\\": "src" }
-    },
-    "target-dir": "Ergo/Http"
+    }
 }
