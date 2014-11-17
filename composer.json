@@ -1,9 +1,9 @@
 {
-    "name": "99designs/ergo",
+    "name": "99designs/ergo-http",
     "type": "library",
-    "description": "Micro-framework for routing and request/response handling in PHP 5.3",
-    "keywords": ["request", "response", "routing", "99designs"],
-    "homepage": "http://github.com/99designs/ergo",
+    "description": "Micro-HTTP client for PHP 5.3",
+    "keywords": ["http", "99designs"],
+    "homepage": "http://github.com/99designs/ergo-http",
     "license": "MIT",
     "authors": [
         {
@@ -22,8 +22,7 @@
         "mockery/mockery": "dev-master"
     },
     "autoload": {
-        "psr-0": {
-            "Ergo": "classes"
-        }
-    }
+        "psr-4": { "Ergo\\Http\\": "src" }
+    },
+    "target-dir": "Ergo/Http"
 }
