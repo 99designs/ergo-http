@@ -1,8 +1,8 @@
 <?php
 
-namespace Ergo\Http\Error;
+namespace Ergo\Http;
 
-class Exception extends \Exception
+class Error extends \Exception
 {
     public function getStatusCode()
     {

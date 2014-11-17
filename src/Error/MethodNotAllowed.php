@@ -2,7 +2,9 @@
 
 namespace Ergo\Http\Error;
 
-class MethodNotAllowed extends Exception
+use Ergo\Http\Error;
+
+class MethodNotAllowed extends Error
 {
     const STATUS_CODE = 405;
 

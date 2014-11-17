@@ -2,7 +2,9 @@
 
 namespace Ergo\Http\Error;
 
-class Unauthorized extends Exception
+use Ergo\Http\Error;
+
+class Unauthorized extends Error
 {
     const STATUS_CODE = 401;
 

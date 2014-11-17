@@ -37,7 +37,7 @@ class ClientTest extends \PHPUnit_Framework_TestCase
 	{
 		$this->transport()->shouldReceive('send')->andReturn(new Response(500, array()));
 
-		$this->setExpectedException('Ergo\Http\Error\Exception');
+		$this->setExpectedException('Ergo\Http\Error');
 
 		$this->client()->get('/hello');
 	}

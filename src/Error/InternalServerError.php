@@ -2,7 +2,9 @@
 
 namespace Ergo\Http\Error;
 
-class InternalServerError extends Exception
+use Ergo\Http\Error;
+
+class InternalServerError extends Error
 {
     const STATUS_CODE = 500;
 

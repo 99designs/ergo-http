@@ -2,7 +2,9 @@
 
 namespace Ergo\Http\Error;
 
-class NotFound extends Exception
+use Ergo\Http\Error;
+
+class NotFound extends Error
 {
     const STATUS_CODE = 404;
 

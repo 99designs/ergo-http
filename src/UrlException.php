@@ -2,6 +2,6 @@
 
 namespace Ergo\Http;
 
-class UrlException extends \Exception
+class UrlException extends Error
 {
 }

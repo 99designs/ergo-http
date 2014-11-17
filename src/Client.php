@@ -2,7 +2,7 @@
 
 namespace Ergo\Http;
 
-use Ergo\Http\Error;
+use Ergo\Http;
 
 /**
  * A simple HTTP client

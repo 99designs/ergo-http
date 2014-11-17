@@ -4,7 +4,7 @@ namespace Ergo\Http\Error;
 
 use Ergo\Http\Error;
 
-class BadRequest extends Exception
+class BadRequest extends Error
 {
     const STATUS_CODE = 400;
 
