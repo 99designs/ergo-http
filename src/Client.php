@@ -238,7 +238,7 @@ class Client
         } elseif ($httpCode == 404) {
             throw new Error\NotFound($body);
         } elseif ($httpCode >= 300) {
-            throw new Error\Exception($body, $httpCode);
+            throw new Error($body, $httpCode);
         }
 
         return $response;
