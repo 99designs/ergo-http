@@ -2,8 +2,6 @@
 
 namespace Ergo\Http;
 
-use Ergo\Http\Error\Exception;
-
 class Transport
 {
     const IPFAMILY_IPV4 = CURL_IPRESOLVE_V4;
@@ -23,7 +21,7 @@ class Transport
         $curlResponse = curl_exec($curl);
         $total = microtime(true) - $start;
         if ($curlResponse === false) {
-            throw new Exception(sprintf(
+            throw new Error(sprintf(
                 'Curl error [errno: %d, url: %s, time: %.3fs): %s',
                 curl_errno($curl),
                 $request->getUrl(),

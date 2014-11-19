@@ -1,7 +1,6 @@
 <?php
 
 namespace Ergo\Http;
-use Ergo\Http\Error\Exception;
 
 /**
  * An HTTP status, with a code and a message.
@@ -94,7 +93,7 @@ class Status
         $code = $this->getCode();
 
         if (!array_key_exists($code, $this->_messageMap))
-            throw new Exception("Unknown HTTP status code: $code");
+            throw new Error("Unknown HTTP status code: $code");
 
         return $this->_messageMap[$code];
     }
