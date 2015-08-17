@@ -1,0 +1,6 @@
+ci:
+  build: .
+  environment:
+      GEMFURY_CREDENTIALS:
+  volumes:
+      - .:/src
