@@ -1,0 +1,13 @@
+[
+  {
+    "type": "script",
+    "name": "Test",
+    "command": ".buildkite/test.sh",
+    "env": {
+      "BUILDKITE_DOCKER_COMPOSE_CONTAINER": "ci"
+    },
+    "agent_query_rules": [
+      "queue=elastic"
+    ]
+  }
+]
